@@ -1,0 +1,52 @@
+*{
+  margin:0;padding:0;box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  background-color: var(--bg);
+  font-family: "poppins",sans-serif;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+:root{
+  color-scheme: dark light;
+  --bg:hsl(0, 0%, 0%);
+  --fg:hsl(0, 0%, 95%);
+  --text-primary:hsl(0, 0%, 97%);
+  --text-secondary:hsl(0, 0%, 70%);
+
+}
+
+@media (prefers-color-scheme: light){
+:root{
+  --bg:hsl(0, 0%, 97%);
+  --text-dark:hsl(0, 0%, 7%);
+  --text-light:hsl(0, 0%, 47%);
+}  
+}
+
+
+.hero{
+  width: 100vw;height: 100vh;
+}
+header{
+  width: 100%;height: 9vh;
+  display: flex;align-items:center;justify-content:center;gap:70%;
+  font-size: 1.3rem;
+}
+.content{
+  width:100%;
+  height: 80vh;
+  display: flex;align-items: center;justify-content:center;flex-direction:column;gap:1.5rem;
+}
+.hero .content h1{
+  font-size:5rem;
+}
+.hero .content h4{
+  color:var(--text-secondary);
+  font-size:2rem;
+  font-weight: 200;
+}
