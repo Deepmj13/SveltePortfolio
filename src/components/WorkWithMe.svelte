@@ -22,13 +22,13 @@
             scrollTrigger: {
                 trigger: headline,
                 start: "top 90%",
-                end: "bottom 55%",
+                end: "bottom 65%",
                 scrub: 1,
             },
             x: -100,
             opacity: 0,
-            letterSpacing: "20px",
-            filter: "blur(10px)",
+            rotate: 5,
+            filter: "blur(8px)",
         });
 
         // --- Marquee Animation ---
