@@ -105,7 +105,6 @@
     const onMouseMove = (e) => {
       const xPos = (e.clientX / window.innerWidth - 0.5) * 50;
       const yPos = (e.clientY / window.innerHeight - 0.5) * 50;
-
       gsap.to(profileImg, {
         x: xPos,
         y: yPos,
@@ -114,8 +113,14 @@
       });
     };
 
-    heroSection.addEventListener("mousemove", onMouseMove);
-    return () => heroSection.removeEventListener("mousemove", onMouseMove);
+    if (window.innerWidth > 1024) {
+      heroSection.addEventListener("mousemove", onMouseMove);
+    }
+    return () => {
+      if (window.innerWidth > 1024) {
+        heroSection.removeEventListener("mousemove", onMouseMove);
+      }
+    };
   });
 </script>
 

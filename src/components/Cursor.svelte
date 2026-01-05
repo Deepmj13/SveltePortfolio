@@ -53,6 +53,10 @@
     };
 
     onMount(() => {
+        const isDesktop = window.innerWidth > 1024;
+
+        if (!isDesktop) return;
+
         let lastSpawnX = 0;
         let lastSpawnY = 0;
         let rafId;
@@ -144,18 +148,9 @@
 <div bind:this={sparklesContainer} class="sparkles-container"></div>
 
 <style>
-    :global(body) {
-        cursor: none;
-    }
-
-    :global(a),
-    :global(button),
-    :global(.contact-btn) {
-        cursor: none !important;
-    }
-
     .cursor-dot,
     .cursor-outline {
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -163,6 +158,23 @@
         z-index: 9999;
         border-radius: 50%;
         will-change: transform;
+    }
+
+    @media (min-width: 1025px) {
+        :global(body) {
+            cursor: none;
+        }
+
+        :global(a),
+        :global(button),
+        :global(.contact-btn) {
+            cursor: none !important;
+        }
+
+        .cursor-dot,
+        .cursor-outline {
+            display: block;
+        }
     }
 
     .cursor-dot {

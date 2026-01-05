@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import Hero from "./components/Hero.svelte";
+  import WorkWithMe from "./components/WorkWithMe.svelte";
   import Loader from "./components/Loader.svelte";
   import Cursor from "./components/Cursor.svelte";
 
@@ -25,5 +26,8 @@
 {#if loader}
   <Loader />
 {:else}
-  <Hero />
+  <main>
+    <Hero />
+    <WorkWithMe />
+  </main>
 {/if}
