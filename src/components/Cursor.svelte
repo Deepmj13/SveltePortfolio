@@ -21,9 +21,9 @@
         sparkle.className = "sparkle";
         sparklesContainer.appendChild(sparkle);
 
-        const size = Math.random() * 3 + 1.5;
-        const destX = x + (Math.random() - 0.5) * 60;
-        const destY = y + Math.random() * 120 + 40;
+        const size = Math.random() * 10 + 5;
+        const destX = x + (Math.random() - 0.2) * 60;
+        const destY = y + Math.random() * 60 + 20;
         const rotation = Math.random() * 360;
 
         gsap.set(sparkle, {
@@ -180,14 +180,14 @@
     .cursor-dot {
         width: 6px;
         height: 6px;
-        background-color: var(--text-primary, #ffffff);
+        background-color: var(--cursor-primary);
         mix-blend-mode: difference;
     }
 
     .cursor-outline {
         width: 32px;
         height: 32px;
-        border: 1.5px solid var(--text-primary, #ffffff);
+        border: 1.5px solid var(--cursor-primary);
         mix-blend-mode: difference;
     }
 

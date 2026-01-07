@@ -1,19 +1,19 @@
 <script>
-  import { onMount } from 'svelte';
-  import gsap from 'gsap';
+  import { onMount } from "svelte";
+  import gsap from "gsap";
 
   let loaderContainer;
 
   onMount(() => {
-    const dots = loaderContainer.querySelectorAll('.dot');
+    const dots = loaderContainer.querySelectorAll(".dot");
 
     gsap.to(dots, {
-      y: -20,            
+      y: -20,
       duration: 0.4,
-      stagger: 0.2,      
-      repeat: -1,         
-      yoyo: true,    
-      ease: "power1.inOut"
+      stagger: 0.2,
+      repeat: -1,
+      yoyo: true,
+      ease: "power1.inOut",
     });
   });
 </script>

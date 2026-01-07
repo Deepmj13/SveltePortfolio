@@ -243,7 +243,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: var(--text-secondary, #e0e0e0);
+    background: var(--text-secondary);
     transform: rotate(-4deg); /* Added slight tilt like the design */
   }
 
@@ -265,6 +265,7 @@
     margin: 0;
     letter-spacing: -4px;
     line-height: 0.8;
+    color: var(--text-primary);
   }
 
   .tagline {

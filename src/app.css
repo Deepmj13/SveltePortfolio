@@ -12,6 +12,9 @@ body {
   user-select: none;
   overscroll-behavior: none;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 html.lenis,
 html.lenis-scrolling {
@@ -43,14 +46,19 @@ a {
   color-scheme: dark light;
   --bg: hsl(0, 0%, 0%);
   --fg: hsl(0, 0%, 95%);
-  --text-primary: hsl(0, 0%, 97%);
-  --text-secondary: hsl(0, 0%, 70%);
+  --text-primary: hsl(0, 0%, 90%);
+  --cursor-primary: hsl(0, 0%, 97%);
+  --text-secondary: hsl(0, 0%, 65%);
   --text-dark: #111;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg: hsl(0, 0%, 97%);
+    --fg: hsl(0, 0%, 0%);
+    --text-primary: hsl(0, 0%, 10%);
+    --cursor-primary: hsl(0, 0%, 90%);
+    --text-secondary: hsl(0, 0%, 20%);
     --text-dark: hsl(0, 0%, 7%);
     --text-light: hsl(0, 0%, 47%);
   }
@@ -88,46 +96,14 @@ header {
   font-size: 1.3rem;
 }
 
-.content {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.hero .content h1 {
-  font-size: 7rem;
-  /* mix-blend-mode: difference; */
-}
-
-.hero .content h4 {
-  color: var(--text-secondary);
-  font-size: 2rem;
-  font-weight: 300;
-
-}
-
-
 @media screen and (max-width:768px) {
   header {
     gap: 50%;
   }
-
-  .hero .content h1 {
-    font-size: 3.8rem;
-  }
 }
-
 
 @media screen and (max-width:430px) {
   header {
     gap: 20%;
-  }
-
-  .hero .content h1 {
-    font-size: 3.8rem;
   }
 }

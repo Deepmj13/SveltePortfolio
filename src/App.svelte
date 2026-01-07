@@ -7,6 +7,7 @@
   import Services from "./components/Services.svelte";
   import Projects from "./components/Projects.svelte";
   import WorkWithMe from "./components/WorkWithMe.svelte";
+  import Footer from "./components/Footer.svelte";
   import Loader from "./components/Loader.svelte";
   import Cursor from "./components/Cursor.svelte";
 
@@ -15,21 +16,23 @@
   let loader = true;
 
   onMount(() => {
-    // Initialize Lenis
-    const lenis = new Lenis({
+    const lenisConfig = {
       duration: 2.0,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       wheelMultiplier: 1.1,
       touchMultiplier: 1.5,
-    });
+    };
 
-    // Synchronize Lenis with ScrollTrigger
+    const lenis = new Lenis(lenisConfig);
+
     lenis.on("scroll", ScrollTrigger.update);
 
-    gsap.ticker.add((time) => {
+    const updateTicker = (time) => {
       lenis.raf(time * 1000);
-    });
+    };
+
+    gsap.ticker.add(updateTicker);
 
     gsap.ticker.lagSmoothing(0);
 
@@ -41,8 +44,13 @@
       handleLoad();
     } else {
       window.addEventListener("load", handleLoad);
-      return () => window.removeEventListener("load", handleLoad);
     }
+
+    return () => {
+      lenis.destroy();
+      gsap.ticker.remove(updateTicker);
+      window.removeEventListener("load", handleLoad);
+    };
   });
 </script>
 
@@ -56,5 +64,6 @@
     <Services />
     <Projects />
     <WorkWithMe />
+    <Footer />
   </main>
 {/if}
