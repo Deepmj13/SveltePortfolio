@@ -295,5 +295,9 @@
     .portfolio-wrapper {
       margin-top: -8vw;
     }
+    .tagline {
+      font-size:.9rem;
+      text-align: center;
+    }
   }
 </style>
