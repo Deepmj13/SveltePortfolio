@@ -108,8 +108,10 @@
               <span>{project.category}</span>
             </div>
             <h3 class="project-title">{project.title}</h3>
-            <a href="https://github.com/deepmj13" class="view-btn"
-              >VIEW PROJECT <span class="arrow">→</span></a
+            <a
+              href="https://github.com/deepmj13"
+              target="_blank"
+              class="view-btn">VIEW PROJECT <span class="arrow">→</span></a
             >
           </div>
         </div>
