@@ -82,10 +82,5 @@ src/
 
 - **Hero/Landing Design Concept**: [Canva Creative Studio](https://www.canva.com/)
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
 
 Built with ❤️ by [Deep Mujpara](https://github.com/Deepmj13)
