@@ -2,7 +2,7 @@
 
 A high-performance, visually stunning developer portfolio built with **Svelte 5**, focusing on fluid animations and a premium user experience.
 
-![Preview Placeholder](https://via.placeholder.com/1200x600?text=Portfolio+Preview+Coming+Soon)
+![Preview Placeholder](https://drive.google.com/file/d/1eCXN8ncoU00_rb0d6-r29X4Jk7Mz_oVs/view?usp=drive_link)
 
 ## 🚀 Overview
 
