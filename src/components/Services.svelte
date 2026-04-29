@@ -78,23 +78,23 @@
     <header class="section-header">
       <p class="subtitle">EXPERTISE</p>
       <div class="title-wrap">
-        <h2 class="title">MY<br />EXPERTISE //</h2>
+        <h2 class="title">what<br />I do //</h2>
       </div>
     </header>
 
     <div class="services-list">
       {#each services as service, i}
-<div
-           class="service-item {activeIndex === i
-             ? 'active'
-             : ''} {activeIndex !== null && activeIndex !== i ? 'dimmed' : ''}"
-           role="button"
-           tabindex="0"
-           on:mouseenter={() => (activeIndex = i)}
-           on:mouseleave={() => (activeIndex = null)}
-           on:keydown={(e) => e.key === 'Enter' && (activeIndex = i)}
-           aria-label="Service: {service.title}"
-         >
+        <div
+          class="service-item {activeIndex === i
+            ? 'active'
+            : ''} {activeIndex !== null && activeIndex !== i ? 'dimmed' : ''}"
+          role="button"
+          tabindex="0"
+          on:mouseenter={() => (activeIndex = i)}
+          on:mouseleave={() => (activeIndex = null)}
+          on:keydown={(e) => e.key === "Enter" && (activeIndex = i)}
+          aria-label="Service: {service.title}"
+        >
           <div class="service-main">
             <span class="service-id">{service.id}</span>
             <h3 class="service-title">{service.title}</h3>
@@ -147,7 +147,7 @@
   }
 
   .title {
-    font-size: clamp(3rem, 7vw, 7rem);
+    font-size: clamp(2.5rem, 6vw, 6rem);
     font-weight: 900;
     margin: 0;
     text-transform: uppercase;
