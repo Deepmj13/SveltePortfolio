@@ -127,12 +127,13 @@
 <section class="hero" bind:this={heroSection}>
   <header>
     <nav>
-      <span class="logo" bind:this={navItems}>Portfolio</span>
-      <a
-        href="mailto:deepmujpara@gmail.com"
-        class="contact-btn"
-        bind:this={navItems}>Let's Talk</a
-      >
+      <a href="/" class="logo" bind:this={navItems}>Portfolio</a>
+<a
+         href="mailto:deepmujpara@gmail.com"
+         class="contact-btn"
+         bind:this={navItems}
+         aria-label="Contact Deep Mujpara via email">Let's Talk</a
+       >
     </nav>
   </header>
 
@@ -143,7 +144,7 @@
 
     <div class="image-wrapper">
       <div class="image-container" bind:this={profileImg}>
-        <img src={profile} alt="Deep Mujpara" />
+        <img src={profile} alt="Deep Mujpara - Software Developer and Designer" fetchpriority="high" />
       </div>
     </div>
 

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deepmujpara.github.io/sitemap.xml

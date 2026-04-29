@@ -178,11 +178,12 @@
           </a>
         </div>
         <div class="btn-wrap">
-          <a
-            href="mailto:deepmujpara@gmail.com"
-            class="magnetic-btn"
-            bind:this={magneticBtn}
-          >
+<a
+             href="mailto:deepmujpara@gmail.com"
+             class="magnetic-btn"
+             bind:this={magneticBtn}
+             aria-label="Get in touch with Deep Mujpara"
+           >
             <div class="btn-content">
               <span>GET IN TOUCH</span>
             </div>

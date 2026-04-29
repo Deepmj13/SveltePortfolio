@@ -1,6 +1,6 @@
-<section class="footer">
+<footer class="footer">
   <p>© {new Date().getFullYear()} Deep Mujpara</p>
-</section>
+</footer>
 
 <style>
   .footer {

@@ -86,7 +86,7 @@
 <section class="projects-section" bind:this={section}>
   <div class="header-wrap">
     <h2 class="section-title">
-      DEVELOPED <span class="outline">STUFF</span>
+      FEATURED <span class="outline">PROJECTS</span>
     </h2>
   </div>
 
@@ -99,7 +99,7 @@
       >
         <div class="project-inner">
           <div class="image-box">
-            <img src={project.image} alt={project.title} />
+            <img src={project.image} alt={project.title} loading="lazy" />
           </div>
           <div class="project-info">
             <div class="meta">
