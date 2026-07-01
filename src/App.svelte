@@ -47,6 +47,11 @@
   });
 </script>
 
+<svelte:head>
+  <title>Deep Mujpara | Software Developer & Designer</title>
+  <meta name="description" content="Portfolio of Deep Mujpara, a Software Developer and Designer specializing in creating high-performance, visually stunning web experiences and intuitive UI/UX design.">
+</svelte:head>
+
 <Cursor />
 
 {#if loader}

@@ -99,7 +99,7 @@
       >
         <div class="project-inner">
           <div class="image-box">
-            <img src={project.image} alt={project.title} loading="lazy" />
+            <img src={project.image} alt="{project.title} — {project.category} mockup showcasing the interface design" loading="lazy" />
           </div>
           <div class="project-info">
             <div class="meta">
@@ -111,6 +111,8 @@
             <a
               href="https://github.com/deepmj13"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View {project.title} project on GitHub"
               class="view-btn">VIEW PROJECT <span class="arrow">→</span></a
             >
           </div>
