@@ -93,6 +93,7 @@
           on:mouseenter={() => (activeIndex = i)}
           on:mouseleave={() => (activeIndex = null)}
           on:keydown={(e) => e.key === "Enter" && (activeIndex = i)}
+          on:blur={() => (activeIndex = null)}
           aria-label="Service: {service.title}"
         >
           <div class="service-main">

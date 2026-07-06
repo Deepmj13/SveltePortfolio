@@ -37,7 +37,7 @@
         trigger: section,
         pin: true,
         scrub: 1,
-        end: () => "+=" + horizontalContainer.scrollWidth,
+        end: () => "+=" + (horizontalContainer.scrollWidth - window.innerWidth),
         invalidateOnRefresh: true,
       },
     });

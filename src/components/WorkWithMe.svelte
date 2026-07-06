@@ -16,9 +16,11 @@
   let btnX = 0;
   let btnY = 0;
 
+  let headlineTween;
+
   onMount(() => {
     // --- Headline Scroll Animation ---
-    gsap.from(headline, {
+    headlineTween = gsap.from(headline, {
       scrollTrigger: {
         trigger: headline,
         start: "top 95%",
@@ -70,7 +72,10 @@
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      ScrollTrigger.getAll().forEach((t) => t.kill());
+      if (headlineTween?.scrollTrigger) {
+        headlineTween.scrollTrigger.kill();
+      }
+      headlineTween?.kill();
     };
   });
 </script>
