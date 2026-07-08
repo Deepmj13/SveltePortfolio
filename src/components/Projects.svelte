@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import gsap from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
-  import fintech from "../assets/fintech_dashboard_mockup_1767595777543.png";
+  import hindshipping from "../assets/hindshipping.webp";
   import ecommerce from "../assets/ecommerce_minimalist_mockup_1767595795069.png";
 
   gsap.registerPlugin(ScrollTrigger);
@@ -12,10 +12,10 @@
 
   const projects = [
     {
-      title: "Fintech Flow",
-      category: "DASHBOARD / WEB APP",
+      title: "Hindshipping",
+      category: "Web App ",
       year: "2023",
-      image: fintech,
+      image: hindshipping,
       color: "#1a1a1a",
     },
     {
@@ -99,7 +99,11 @@
       >
         <div class="project-inner">
           <div class="image-box">
-            <img src={project.image} alt="{project.title} — {project.category} mockup showcasing the interface design" loading="lazy" />
+            <img
+              src={project.image}
+              alt="{project.title} — {project.category} mockup showcasing the interface design"
+              loading="lazy"
+            />
           </div>
           <div class="project-info">
             <div class="meta">
@@ -109,7 +113,7 @@
             </div>
             <h3 class="project-title">{project.title}</h3>
             <a
-              href="https://github.com/deepmj13"
+              href="https://hindshipping.in"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View {project.title} project on GitHub"
@@ -147,7 +151,7 @@
   }
 
   .section-title {
-    font-size: clamp(3rem, 8vw, 8rem);
+    font-size: clamp(2.5rem, 6vw, 6rem);
     font-weight: 900;
     margin: 0;
     letter-spacing: -2px;
