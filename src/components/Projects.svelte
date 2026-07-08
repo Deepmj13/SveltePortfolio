@@ -3,7 +3,8 @@
   import gsap from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   import hindshipping from "../assets/hindshipping.webp";
-  import ecommerce from "../assets/ecommerce_minimalist_mockup_1767595795069.png";
+  import expensetracker from "../assets/ExpenseTracker-Merged.webp";
+  import gameimg from "../assets/Froggy.webp";
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -17,14 +18,24 @@
       year: "2023",
       image: hindshipping,
       color: "#1a1a1a",
+      link: "https://hindshipping.in",
     },
     {
-      title: "Aethereal Luxe",
-      category: "E-COMMERCE / DESIGN",
-      year: "2024",
-      image: ecommerce,
+      title: "Ninja Frog",
+      category: "PLatformer Game / 2D Game",
+      year: "2025",
+      image: gameimg,
+      color: "#1a1a1a",
+      link: "https://github.com/Deepmj13/FoxyGame",
+    },
+    {
+      title: "Expense Tracker",
+      category: "App / Autonomous",
+      year: "2026",
+      image: expensetracker,
       color: "#f5f5f5",
       textColor: "#000",
+      link: "https://github.com/Deepmj13/Expense-Tracker",
     },
   ];
 
@@ -113,7 +124,7 @@
             </div>
             <h3 class="project-title">{project.title}</h3>
             <a
-              href="https://hindshipping.in"
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View {project.title} project on GitHub"
