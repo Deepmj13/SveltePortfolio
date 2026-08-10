@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import gsap from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
-  import hindshipping from "../assets/hindshipping.webp";
+  import vhlogistic from "../assets/vhlogistic.webp";
   import expensetracker from "../assets/ExpenseTracker-Merged.webp";
   import gameimg from "../assets/Froggy.webp";
 
@@ -13,12 +13,12 @@
 
   const projects = [
     {
-      title: "Hindshipping",
+      title: "VH Logistics",
       category: "Web App ",
-      year: "2023",
-      image: hindshipping,
+      year: "2026",
+      image: vhlogistic,
       color: "#1a1a1a",
-      link: "https://hindshipping.in",
+      link: "https://vhlogistic.in",
     },
     {
       title: "Ninja Frog",
